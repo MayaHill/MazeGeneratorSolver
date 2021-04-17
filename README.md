@@ -27,7 +27,7 @@ This project contains three different folders:
 
 Clone the repository:
 
-    git clone 
+    git clone https://github.com/MayaHill/MazeGeneratorSolver-4-18-April-.git
 
 Install CSFML
 
