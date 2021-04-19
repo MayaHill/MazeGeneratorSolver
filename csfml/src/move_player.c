@@ -11,12 +11,10 @@ void shift_map(bonus_t *d, int x, int y)
 {
     tile_t *tile = NULL;
     sfVector2f tile_pos = d->tiles.tiles[0].pos;
-    int speed = 16;
+    int speed = 32;
 
-    if ((int)round(tile_pos.x) % 32 || (int)round(tile_pos.y) % 32) {
-        d->player.coords.x += x;
-        d->player.coords.y += y;
-    }
+    d->player.coords.x += x;
+    d->player.coords.y += y;
     for (int i = 0; i < d->tiles.size_t; i++) {
         tile = &d->tiles.tiles[i];
         tile->pos.x += -1 * y * speed;
@@ -34,12 +32,10 @@ void shift_map(bonus_t *d, int x, int y)
 void shift_player(bonus_t *d, int x, int y)
 {
     sfVector2f player = d->player.p.pos;
-    int speed = 16;
+    int speed = 32;
 
-    if ((int)round(player.x) % 32 || (int)round(player.y) % 32) {
-        d->player.coords.x += x;
-        d->player.coords.y += y;
-    }
+    d->player.coords.x += x;
+    d->player.coords.y += y;
     d->player.p.pos.x += y * speed;
     d->player.p.pos.y += x * speed;
     sfSprite_setPosition(d->player.p.sprite, d->player.p.pos);
