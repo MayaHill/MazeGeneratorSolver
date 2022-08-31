@@ -1,4 +1,4 @@
-# MazeGeneratorSolver-4-18-April
+# MazeGeneratorSolver
 
 The goal of this project is to generate mazes (in a reasonable amount of time) and solve them (in a reasonable amount of time)
 
